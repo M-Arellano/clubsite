@@ -1,0 +1,626 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+*, ::after, ::before {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
+    background: url('../img/spinninigglobe_moment.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+        
+}
+#video1,
+#video2 {
+    display: none;
+}
+.navbar {
+    display: none;
+}
+.quicklinks {
+    display: none;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: darkblue;   
+}
+.moto H1 {
+	font-family: 'Caveat';
+    color: whitesmoke;
+
+}
+
+/************************
+    link styles
+    ********************/
+
+/* unvisited link */
+.navbar a:link {
+    text-decoration: none;
+    /*color: black;*/
+}
+  
+  /* visited link */
+.navbar a:visited {
+    text-decoration: none;
+    /*color: black;*/        
+}
+
+.navbar a:active {
+    text-decoration: none;
+    
+}
+/* unvisited link */
+.tile a:link {
+    text-decoration: none;
+    color: whitesmoke;
+}
+  
+  /* visited link */
+.tile a:visited {
+    text-decoration: none;
+    color: whitesmoke;        
+}
+
+.tile a:active {
+    color: whitesmoke;
+    
+}
+
+/* unvisited link */
+.mobile-navbar.menu a:link {
+    text-decoration: none;
+    color: black;
+}
+  
+  /* visited link */
+.mobile-navbar a:visited {
+    text-decoration: none;
+    color: black;
+    opacity: 1;
+}
+
+.mobile-navbar a:hover {
+    background: #5dbb5a;
+    color: blanchedalmond;
+}
+
+
+
+
+/******************************
+          Header
+******************************/
+
+    header {
+        background: #5dbb5a;
+        opacity: .8;
+        padding: 0;
+    }
+    .container {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: .4rem;      
+    }
+    
+    .logo img {
+        height: 3rem;
+        border-radius: 100%;
+        box-shadow: 6px 6px 10px rgb(255, 255, 255);
+        
+    }
+    .moto h1 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        letter-spacing: 0.2rem;
+        text-shadow: -3px 3px #008cff;
+        padding: 0;
+        margin: 0;
+    }
+    .logo {
+        padding-left: .3rem;
+    }
+
+    .membership {
+        padding-right: .3rem;
+        
+    }
+    .membership img { 
+        height: 3rem;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px gray;
+        
+    }
+
+
+
+
+
+
+
+
+/**************************
+    Main Content
+**************************/
+
+
+
+
+main {
+    margin: 0 5%;
+    padding-bottom: 4rem;
+    
+}
+
+   
+/***************************************************
+            MAIN BODY FLEX CONTAINER
+***************************************************/
+
+
+    
+.flextiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+    }
+
+
+
+
+.tile {
+    min-width: 15rem;
+    min-height: 10rem;
+    max-width: 15rem;
+    max-height: 10rem;
+    background-color: darkblue;
+    border-radius: 10px;
+    margin: 2rem;
+    box-shadow: 10px 10px 8px rgb(18, 7, 54);
+    opacity: .6;
+}
+
+.tile {
+    font-family: 'caveat';
+    font-size: 2rem;
+    text-align: center;
+}
+.tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.a img {
+    width: 100%;
+}
+.b img {
+    width: 30%;
+}
+
+.tile:hover {
+    transform: scale(1.3);
+    box-shadow: 20px 20px 8px rgb(18, 7, 54);
+}
+
+
+
+
+.quicklinks {
+        display: none;
+}
+
+
+    
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-weight: 500;
+    width: 100%;
+    background-color: #5dbb5a;
+    opacity: .8;
+}
+    
+footer P {
+    text-align: center;
+    padding-top: .6rem;
+    max-width: 30ch;
+}
+    
+
+/****************************
+     Media Screen 680
+*****************************/
+
+
+
+@media screen and (min-width: 680px){
+
+    .mobile-navbar nav {
+        display: none;
+    }
+
+    .mobile-navbar p {
+        display: none;
+    }
+
+    
+
+  
+    
+    .logo img,
+    .membership img {
+        height: 80px;
+        margin: .7rem 0;
+    }
+    
+    .moto {
+        font-size: 1.5rem;
+        padding: 0 6rem;
+    }
+    .moto h1 {
+        font-size: 3.5rem;
+    }
+
+   
+
+    
+}
+
+/****************************
+     Media Screen 1070
+*****************************/
+
+
+@media screen and (min-width: 1070px){
+
+    body {
+        background: url('../img/spinninigglobe_moment.jpg') rgb(0, 0, 0);
+        background-blend-mode: multiply;    
+    }
+    .mobile-navbar nav {
+        display: none;
+    }
+
+    .quicklinks,
+    .membership {
+        display: initial;
+    }
+    
+    /***********************************************
+            VIDEO BACKGROUND
+*************************************************/
+
+   
+    
+    #video2 {
+        display: none;
+    }
+    #video1 {
+        display: initial;
+        position: fixed;
+        top: 300;
+        left: 0;
+        z-index: -99;    
+        width: 100vw;
+        height: 100%;
+        }
+    
+
+    /****************************************
+            HEADER
+    ****************************************/
+    header {
+        background: #5dbb5a;
+        width: 100%;
+        opacity: .8;
+        padding: 0;
+    }
+
+    .container {
+        padding-top: .4rem; 
+        justify-content: space-around;
+    }
+    .logo img,
+    .membership img {
+        height: 100px;
+        padding: 0;
+        margin: .4rem 0;
+    }
+    
+    .moto {
+        font-size: 1.5rem;
+        padding: 0 6rem;
+    }
+    .moto h1 {
+        font-size: 5rem;
+    }
+
+    
+    main {
+        width: 90%;
+         
+    }
+    footer {
+        position: absolute;
+        margin-top: 0rem;
+        padding-bottom: .5rem;
+        height: 6rem;
+    }
+    
+          
+    
+    .quicklinks {
+        position: fixed;
+        top: 22rem;
+        left: 1rem;
+        
+    }
+    .quicklinks img {
+        border-radius: 10px;
+        box-shadow: 10px 10px 8px grey;
+    }
+      
+   
+    
+
+ 
+    
+    
+/***************************************************
+            MAIN BODY FLEX CONTAINER
+***************************************************/
+
+
+    
+    .flextiles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        min-width: 900px;
+        margin: 1rem 0;
+        gap: 1.5rem;
+        margin: 0 auto;
+        }
+    
+
+   
+
+    .tile {
+        min-width: 15rem;
+        min-height: 10rem;
+        max-width: 15rem;
+        max-height: 10rem;
+        background-color: darkblue;
+        border-radius: 10px;
+        margin: 2rem;
+        box-shadow: 10px 10px 8px rgb(18, 7, 54);
+        opacity: .6;
+    }
+
+    .tile {
+        font-family: 'caveat';
+        font-size: 2rem;
+        text-align: center;
+    }
+    .tile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    .a img {
+        width: 100%;
+    }
+    .b img {
+        width: 30%;
+    }
+
+
+
+    /*-------------------------
+    Horizontal Nav Bar 
+    ---------------------------*/
+    .navbarcontainer {
+        display: initial;
+        margin-top: 1rem;
+        overflow: hidden;
+            
+    }
+
+    .navbar { 
+        width: 100%;  
+        background-color: #5dbb5a;
+        opacity: 0.7;
+        box-shadow: -0px 10px 10px #86b484;
+        overflow: hidden;   
+    }
+    .navbar  {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        list-style: none;
+        text-transform: uppercase;   
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    .navbar a {
+        float: left;
+        width: 175px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 500;
+        color: darkblue;
+        background-color: #5dbb5a;
+    
+    }
+    .navbar a:hover {
+        background: #62ff5db4;
+        color: white;
+        box-shadow: 10px 10px 5px #558553;
+    }
+    .navbar a:hover {
+        color: white;
+    }
+   
+
+}
+
+
+
+
+
+@media screen and (min-width: 1500px){
+
+    #video1 {
+        display: none;
+    }
+      #video2 {
+        display: initial;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -99;    
+        width: 100%;
+        height: auto;
+    }
+    
+    .flextiles {
+        width: 60%;
+    }
+    .quicklinks {
+        position: fixed;
+        top: 25rem;
+        left: 6rem;
+        
+    }
+    
+
+
+
+
+}
+
+
+
+/******************************
+      Mobile Styles
+******************************/
+/*
+.mobile-navbar p {
+    font-size: .5rem;
+    text-align: center;
+    padding: 8px 10px 4px 10px;
+    margin: 0;
+    background-color: #5dbb5a;
+    color: rgb(13, 4, 133);
+    
+}
+
+.navbarcontainer {
+    display: none;
+}
+*/
+/*----------------------
+     Mobile Nav Menu vetical drop down
+-------------------------*/
+
+/*
+.mobile-navbar nav {
+    margin-left: .5rem;
+    margin-right: .3rem;
+    padding: 0;
+    max-width: 150px;
+    float: left;
+    display: inline-block;
+}
+ 
+.mobile-navbar nav a,
+ul {
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;   
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-navbar ul li {
+    font-size: .5rem;
+    list-style: none;
+    line-height: 20px;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /*background: rgb(97, 96, 100);*/
+    opacity: .8;
+}
+/*
+.mobile-navbar ul li a {
+    display: block;
+    text-decoration: none;
+}
+
+*/
+
+
+
+/************************
+      Borders
+*************************/
+
+/*
+header,
+main,
+.flextiles,
+.navbar {
+    border: 2px dotted tomato;
+}
+
+.container > * {
+    border: 1px dotted rgb(221, 255, 71);
+}
+
+.logo {
+    text-align: left;
+    padding-top: 1rem;
+    padding-left: 3rem;
+    border: 1px dotted tomato;
+} 
+.moto {
+    border: 1px dotted tomato;
+}
